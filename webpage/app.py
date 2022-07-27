@@ -105,7 +105,8 @@ try:
                 else: #gps가 잡혔을때
                     
                     message=client.messages.create(
-                        body="위도:"+ str(msg.lat) +"경도:"+ str(msg.lon) +"\n 캐리어가 외부에 있습니다. \ngps 정보를 보내 드립니다.", #시간(-9h):"+ str(msg.timestamp) +"
+                        body="위도:"+ str(msg.lat) +"경도:"+ str(msg.lon) +"\n 캐리어가 외부에 있습니다.
+                                                                          \n gps 정보를 보내 드립니다.", #시간(-9h):"+ str(msg.timestamp) +"
                         from_='+12765288586',
                         to='+8201056294406'
                         )
